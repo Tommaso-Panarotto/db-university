@@ -40,3 +40,8 @@ FROM `departments`;
 SELECT *
 FROM `teachers`
 WHERE `phone` IS NULL;
+
+--9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campodegree_id, inserire un valore casuale)
+
+INSERT INTO `students` (id, degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
+VALUES ( 5001 , "38", "Tommaso", "Panarotto", "1998-03-12", "PNRTMS98C12", "2024-06-21", "999999", "tomm.pana@gmail.com");
